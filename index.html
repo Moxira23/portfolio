@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="icon" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#home" aria-label="Home"><span>◠</span> <b data-i18n="brand"></b></a>
+  <nav>
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#work" data-i18n="nav_work"></a>
+    <a href="#contact" data-i18n="nav_contact"></a>
+  </nav>
+  <div class="tools">
+    <div class="seg" role="group" aria-label="Language">
+      <button data-lang="uz">UZ</button><button data-lang="en">EN</button>
+    </div>
+    <button id="theme" class="theme" aria-label="Theme"><i></i></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hi" data-i18n="hi"></p>
+    <h1 data-i18n="h1"></h1>
+    <p class="lead" data-i18n="lead"></p>
+    <div class="cta">
+      <a class="btn" href="#work" data-i18n="cta1"></a>
+      <a class="btn ghost" href="#contact" data-i18n="cta2"></a>
+    </div>
+  </div>
+  <div class="stage" id="stage">
+    <div class="ring r1"></div><div class="ring r2"></div>
+    <div class="arch"><img src="images/photo.png" alt="Portrait"></div>
+    <span class="chip c1" data-depth="26">HTML</span>
+    <span class="chip c2" data-depth="-20">CSS</span>
+    <span class="chip c3" data-depth="34">JS</span>
+    <span class="chip c4" data-depth="-30" data-i18n="chip4"></span>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="about" class="about">
+  <h2 data-i18n="about_t"></h2>
+  <div class="about-grid">
+    <div class="bio">
+      <p class="big" data-i18n="about_p"></p>
+      <p data-i18n="about_p2"></p>
+      <p data-i18n="about_p3"></p>
+      <h3 class="sub" data-i18n="int_t"></h3>
+      <div class="tags"><span data-i18n="t1"></span><span data-i18n="t2"></span><span data-i18n="t3"></span><span data-i18n="t4"></span><span data-i18n="t5"></span></div>
+    </div>
+    <ul class="facts">
+      <li><b data-i18n="f0k"></b><span data-i18n="f0v"></span></li>
+      <li><b data-i18n="f1k"></b><span data-i18n="f1v"></span></li>
+      <li><b data-i18n="f2k"></b><span data-i18n="f2v"></span></li>
+      <li><b data-i18n="f3k"></b><span data-i18n="f3v"></span></li>
+      <li><b data-i18n="f4k"></b><span data-i18n="f4v"></span></li>
+    </ul>
+  </div>
+
+  <div class="skills-wrap">
+    <div>
+      <h3 class="sub" data-i18n="sk_t"></h3>
+      <div class="bars">
+        <div class="bar"><span>HTML</span><i style="--w:90%"></i></div>
+        <div class="bar"><span>CSS</span><i style="--w:85%"></i></div>
+        <div class="bar"><span>JavaScript</span><i style="--w:70%"></i></div>
+        <div class="bar"><span data-i18n="sk4"></span><i style="--w:80%"></i></div>
+        <div class="bar"><span data-i18n="sk5"></span><i style="--w:75%"></i></div>
+      </div>
+    </div>
+    <div>
+      <h3 class="sub" data-i18n="path_t"></h3>
+      <ol class="timeline">
+        <li><time>2026</time><b data-i18n="tl1t"></b><p data-i18n="tl1d"></p></li>
+        <li><time>2025</time><b data-i18n="tl2t"></b><p data-i18n="tl2d"></p></li>
+        <li><time>2024</time><b data-i18n="tl3t"></b><p data-i18n="tl3d"></p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <h2 data-i18n="work_t"></h2>
+  <div class="cards">
+    <article class="card k1"><img src="images/project1.svg" alt=""><h3 data-i18n="p1t"></h3><p data-i18n="p1d"></p></article>
+    <article class="card k2"><img src="images/project2.svg" alt=""><h3 data-i18n="p2t"></h3><p data-i18n="p2d"></p></article>
+    <article class="card k3"><img src="images/project3.svg" alt=""><h3 data-i18n="p3t"></h3><p data-i18n="p3d"></p></article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 data-i18n="contact_t"></h2>
+  <a class="mail" href="mailto:hello@example.com">hello@example.com</a>
+  <div class="links">
+    <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+</main>
+<footer><span data-i18n="foot"></span></footer>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
